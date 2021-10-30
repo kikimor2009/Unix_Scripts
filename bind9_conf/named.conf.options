@@ -1,0 +1,15 @@
+options {
+	directory "/var/cache/bind";
+	dump-file "/var/cache/bind/cache_dump.db";
+	listen-on port 53 { localhost; 127.0.0.1; 192.168.6.22; };
+	allow-query { localhost; 192.168.6.0/24; }; 
+	forwarders {
+		192.168.6.1;
+	 };
+	recursion yes;	
+	allow-recursion { 127.0.0.1; 192.168.6.0/24; };
+	dnssec-validation auto;
+	listen-on-v6 { none; };
+	version "DNS Server";
+	querylog yes;
+};

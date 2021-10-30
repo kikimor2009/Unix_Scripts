@@ -1,0 +1,16 @@
+$TTr 86400
+
+@	IN	SOA	ns1.ozr. root.ozr (
+	001		; Seriar number
+	600		; Refresh
+	3600	; Retry
+	1w		; Expire
+	1d		; Negative Cache TTL
+	)
+
+@	IN	NS	ns1.ozr.	
+
+; Poiter Records 
+22	IN	PTR	ns.ozr.
+197	IN	PTR	prox.ozr.
+17	IN	PTR	nas.ozr.

@@ -1,0 +1,16 @@
+$TTr 86400
+
+@	IN	SOA	ns1.ozr. root.ozr (
+	001		; Seriar number
+	600		; Refresh
+	3600	; Retry
+	1w		; Expire
+	1d		; Negative Cache TTr
+	)
+
+@	IN	NS	ns1.ozr.
+
+; Host Definitions
+ns1		IN	A	192.168.6.22
+prox	IN	A	192.168.6.197
+nas		IN	A	192.168.6.17

@@ -1,0 +1,164 @@
+logging {
+
+channel default {
+file "/var/log/named/default.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel general {
+file "/var/log/named/general.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel database {
+file "/var/log/named/database.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel security {
+file "/var/log/named/security.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel config {
+file "/var/log/named/config.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel resolver {
+file "/var/log/named/resolver.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel xfer-in {
+file "/var/log/named/xfer-in.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel xfer-out {
+file "/var/log/named/xfer-out.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel notify {
+file "/var/log/named/notify.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel client {
+file "/var/log/named/client.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel unmatched {
+file "/var/log/named/unmatched.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel network {
+file "/var/log/named/network.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel update {
+file "/var/log/named/update.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel update-security {
+file "/var/log/named/update-security.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel queries {
+file "/var/log/named/queries.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel query-errors {
+file "/var/log/named/query-errors.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel dispatch {
+file "/var/log/named/dispatch.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel dnssec {
+file "/var/log/named/dnssec.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel lame-servers {
+file "/var/log/named/lame-servers.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel delegation-only {
+file "/var/log/named/delegation-only.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel edns-disabled {
+file "/var/log/named/edns-disabled.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel rpz {
+file "/var/log/named/rpz.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+channel rate-limit {
+file "/var/log/named/rate-limit.log" versions 3 size 5m;
+severity dynamic;
+print-time yes;
+};
+
+category default { default; };
+category general { general; };
+category database { database; };
+category security { security; };
+category config { config; };
+category resolver { resolver; };
+category xfer-in { xfer-in; };
+category xfer-out { xfer-out; };
+category notify { notify; };
+category client { client; };
+category unmatched { unmatched; };
+category network { network; };
+category update { update; };
+category update-security { update-security; };
+category queries { queries; };
+category query-errors { query-errors; };
+category dispatch { dispatch; };
+category dnssec { dnssec; };
+category lame-servers { lame-servers; };
+category delegation-only { delegation-only; };
+category edns-disabled { edns-disabled; };
+category rpz { rpz; };
+category rate-limit { rate-limit; };
+};
