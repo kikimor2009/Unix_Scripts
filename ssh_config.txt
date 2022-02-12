@@ -1,0 +1,14 @@
+#Example of ssh config for an bastion host and private host
+
+Host bastion
+  User ec2-user
+  HostName {public_ip}
+  IdentityFile {ssh_key_file}
+  ForwardAgent yes
+
+Host private
+  User ec2-user
+  HostName {private_ip}
+  ForwardAgent yes
+  ProxyCommand ssh -W %h:%p bastion
+  IdentityFile {ssh_key_file}
