@@ -1,0 +1,15 @@
+is_devops: true
+know yourserf: 'false'
+todo_list: !!seq
+  - relationships
+  - communication with others
+  - work related learn:
+      k8s: med
+      bash: entry
+  - self_awareness
+  - something
+work: !!map
+  grow: 50/50
+  listen: true
+  salary: 5000
+

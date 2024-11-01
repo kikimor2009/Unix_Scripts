@@ -1,0 +1,37 @@
+is_devops: !!bool true
+know yourserf: !!str 'false'
+
+todo_list: !!seq
+  - relationships
+  - communication with others
+  - work related learn: !!map
+      k8s: med
+    bash: !!str entry
+  - self_awareness
+  - something
+  
+work: !!map
+  grow: 50/50
+  listen: true
+  salary: 5000
+  
+servers:
+ k8s: &master
+   role: master
+   cpu: 3
+   ram: 16
+ k8s-slave: *master
+ k8s-slave_2:
+   <<: *master
+   role: slave
+   
+multi_line_1: |+
+  this is my
+  multiline
+  test
+  
+multi_2: >+
+  let's 
+  try
+  something else
+  
